@@ -1,0 +1,26 @@
+[2018-03-26 10:44:58,489][7910][testexample.py:11][INFO]:setUp begin
+[2018-03-26 10:44:58,490][7910][testexample.py:15][INFO]:setUp end
+[2018-03-26 10:44:58,490][7910][testexample.py:26][INFO]:测试:xxxxxxxxxxxxxx
+[2018-03-26 10:44:58,490][7910][testexample.py:33][INFO]:tearDown begin
+[2018-03-26 10:44:58,490][7910][testexample.py:35][INFO]:tearDown end
+[2018-03-26 10:44:58,490][7910][logger.py:37][INFO]:.
+[2018-03-26 10:44:58,491][7910][testexample.py:11][INFO]:setUp begin
+[2018-03-26 10:44:58,491][7910][testexample.py:15][INFO]:setUp end
+[2018-03-26 10:44:58,491][7910][testexample.py:18][INFO]:TestAuthed.testStatus
+[2018-03-26 10:44:58,491][7910][testexample.py:19][INFO]:测试:xxxxxxxxxxxx
+[2018-03-26 10:45:03,493][7910][testexample.py:33][INFO]:tearDown begin
+[2018-03-26 10:45:03,493][7910][testexample.py:35][INFO]:tearDown end
+[2018-03-26 10:45:03,494][7910][logger.py:37][INFO]:.
+[2018-03-26 10:45:03,494][7910][logger.py:37][INFO]:
+
+[2018-03-26 10:45:03,495][7910][logger.py:37][INFO]:----------------------------------------------------------------------
+[2018-03-26 10:45:03,495][7910][logger.py:37][INFO]:
+
+[2018-03-26 10:45:03,495][7910][logger.py:37][INFO]:Ran 2 tests in 5.006s
+[2018-03-26 10:45:03,496][7910][logger.py:37][INFO]:
+
+[2018-03-26 10:45:03,496][7910][logger.py:37][INFO]:
+
+[2018-03-26 10:45:03,496][7910][logger.py:37][INFO]:OK
+[2018-03-26 10:45:03,496][7910][logger.py:37][INFO]:
+

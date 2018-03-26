@@ -1,0 +1,43 @@
+[2018-03-26 10:45:45,657][7922][testexample2.py:11][INFO]:setUp begin
+[2018-03-26 10:45:45,658][7922][testexample2.py:15][INFO]:setUp end
+[2018-03-26 10:45:45,658][7922][testexample2.py:26][INFO]:测试:xxxxxxxxxxxxxx
+[2018-03-26 10:45:45,659][7922][logger.py:37][INFO]:F
+[2018-03-26 10:45:45,659][7922][testexample2.py:34][INFO]:tearDown begin
+[2018-03-26 10:45:45,660][7922][testexample2.py:36][INFO]:tearDown end
+[2018-03-26 10:45:45,660][7922][testexample2.py:11][INFO]:setUp begin
+[2018-03-26 10:45:45,660][7922][testexample2.py:15][INFO]:setUp end
+[2018-03-26 10:45:45,661][7922][testexample2.py:18][INFO]:TestAuthed2.testStatus
+[2018-03-26 10:45:45,661][7922][testexample2.py:19][INFO]:测试:xxxxxxxxxxxx
+[2018-03-26 10:45:50,663][7922][testexample2.py:34][INFO]:tearDown begin
+[2018-03-26 10:45:50,663][7922][testexample2.py:36][INFO]:tearDown end
+[2018-03-26 10:45:50,663][7922][logger.py:37][INFO]:.
+[2018-03-26 10:45:50,663][7922][logger.py:37][INFO]:
+
+[2018-03-26 10:45:50,664][7922][logger.py:37][INFO]:======================================================================
+[2018-03-26 10:45:50,664][7922][logger.py:37][INFO]:
+
+[2018-03-26 10:45:50,664][7922][logger.py:37][INFO]:FAIL: testCode (testexample2.TestAuthed2)
+[2018-03-26 10:45:50,664][7922][logger.py:37][INFO]:
+
+[2018-03-26 10:45:50,665][7922][logger.py:37][INFO]:----------------------------------------------------------------------
+[2018-03-26 10:45:50,665][7922][logger.py:37][INFO]:
+
+[2018-03-26 10:45:50,665][7922][logger.py:37][INFO]:Traceback (most recent call last):
+  File "/Users/bj-m-206380a/Documents/workspace/demos/testcases/testexample2.py", line 30, in testCode
+    assert 2==1
+AssertionError
+
+[2018-03-26 10:45:50,665][7922][logger.py:37][INFO]:
+
+[2018-03-26 10:45:50,665][7922][logger.py:37][INFO]:----------------------------------------------------------------------
+[2018-03-26 10:45:50,666][7922][logger.py:37][INFO]:
+
+[2018-03-26 10:45:50,666][7922][logger.py:37][INFO]:Ran 2 tests in 5.007s
+[2018-03-26 10:45:50,666][7922][logger.py:37][INFO]:
+
+[2018-03-26 10:45:50,666][7922][logger.py:37][INFO]:
+
+[2018-03-26 10:45:50,666][7922][logger.py:37][INFO]:FAILED
+[2018-03-26 10:45:50,666][7922][logger.py:37][INFO]: (failures=1)
+[2018-03-26 10:45:50,667][7922][logger.py:37][INFO]:
+
