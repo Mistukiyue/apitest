@@ -108,7 +108,7 @@ api_data.xlsx数据读取 xlrd库
                 return func
                 
  对应日志参考（更多可见ouput样例）
- 
+ ![image_text](https://github.com/Mistukiyue/apitest/blob/master/img/7.png)
 
 
 
