@@ -49,6 +49,10 @@ log连接指向每个测试类的完整log（多线程日志乱序做了处理�
 针对非业务性接口，单独编写脚本case很浪费时间，便使用excel进行管理（可以选择db等其他存储工具皆可），python脚本自动生成脚本代码；
 #api_data.xlsx
 --
+如图，支持1.参数传递，
+        2.测试跳过
+        3.python语法断言
+        
 ![image_text](https://github.com/Mistukiyue/apitest/blob/master/img/5.png)
 
 #testsimpleapi.py
