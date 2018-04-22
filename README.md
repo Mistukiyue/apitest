@@ -53,7 +53,63 @@ log连接指向每个测试类的完整log（多线程日志乱序做了处理�
 
 #testsimpleapi.py
 --
-自动生成脚本代码：
+
+api_data.xlsx数据读取 xlrd库
+
+自动生成脚本代码（和脚本case一致的日志输出等级，方便debug）：
+
+        @staticmethod
+            def gettestfun(case_num,case_url,case_method,case_prama,case_ex,case_dis,case_rely,case_berely):
+                def func(self):
+                    self.logger.info("%s.test_func_%s"%(self.__class__.__name__,case_num))
+                    self.logger.info("测试:%s"%str(case_dis))
+                    if case_rely:
+                        print case_rely 
+                        pro_re = re.compile("%\((.*?)\)")
+                        for i in case_prama.keys():
+                            con = pro_re.search(case_prama[i])
+                            if con:
+                                print con.group(1)
+                                print con.group()
+                                values=getattr(com_pramas, con.group(1))
+                                case_prama[i]=case_prama[i].replace(con.group(),values)
+                        for i in case_ex.keys():
+                            con = pro_re.search(case_ex[i])
+                            if con:
+                                print con.group(1)
+                                print con.group()
+                                values=getattr(com_pramas, con.group(1))
+                                case_ex[i]=case_ex[i].replace(con.group(),values)
+
+                    httprequest=getattr(requests, case_method)
+                    self.logger.info("请求地址为：%s"%case_url)
+                    self.logger.info("请求内容为：%s"%case_prama)
+                    respon=httprequest(case_url,case_prama).content.decode("unicode_escape").encode("UTF-8")
+                    r_response=json.loads(respon)
+                    self.logger.info("返回结果为：%s"%respon)
+                    for i in case_ex.keys():
+                        key='r_response["'+i.replace(".",'"]["')+'"]'
+                        expression=case_ex[i].replace(i,key)
+                        try:
+                            truevalue=eval(key)
+                        except:
+                            raise AssertionError("判定字段%s 错误，接口返回不存在该字段或字段名称错误，读取不到该字段！"%truevalue)   
+                        self.logger.info("断言：%s"%expression)
+                        try:
+                            assert eval(expression)
+                        except:  
+                            raise AssertionError("该断言表达式：%s 结果为flase,实际response的校验参数：%s 的值为 %s"%(expression,key,truevalue))
+                    if case_berely:
+                        print case_berely 
+                        for i in case_berely.keys(): 
+                            value=eval(case_berely[i].split(".",1)[0]+'["'+case_berely[i].split(".",1)[1].replace(".",'"]["')+'"]')
+        #                     exec("self."+i+"=value") in TestSimple
+                            pramas_sava(i,value)
+                return func
+                
+ 对应日志参考（更多可见ouput样例）
+ 
+
 
 
 
