@@ -15,8 +15,8 @@ apitest/config.py
     test_or_line=0                      #同上接口case中我们都配置两个环境的url，通过0，1切换线上线下环境，如果不需要你也可以不用
     thread_m=1 #0为单线程，1为多线程
 
-    run_project=[]    #执行运行一个文件夹下所有case（文件夹需要在testcase文件下）
-    run_case=[]       #制定运行一个具体的case
+    run_project=[]    #执行运行一个文件夹下所有case（文件夹需要在testcase文件下）例如：run_project=[“文件夹名”] 运行文件夹下所有case
+    run_case=[]       #指定运行一个具体的case
 run： run_case.py
 --
 运行入口，如名
