@@ -8,15 +8,14 @@ apitest/config.py
 
 分级运行配置如下：
 --
-    cur_file_dir = os.path.split(os.path.realpath(__file__))[0]
-    cases_dir=cur_file_dir
-    case_list=[os.path.abspath(os.path.join(cur_file_dir,"testcases/"))]
-    host="i.xxxxxxx.live.xxxxx.com"     #我们的项目测试环境接口有不同的域名，做了域名配置，生效需要接口地址管理文件上使用这个配置（我这边有一个单独的。py文件管理各种业务接口数据）如果不需要你也可以不用
-    test_or_line=0                      #同上接口case中我们都配置两个环境的url，通过0，1切换线上线下环境，如果不需要你也可以不用
-    thread_m=1 #0为单线程，1为多线程
-
-    run_project=[]    #执行运行一个文件夹下所有case（文件夹需要在testcase文件下）例如：run_project=[“文件夹名”] 运行文件夹下所有case
-    run_case=[]       #指定运行一个具体的case
+        cur_file_dir = os.path.split(os.path.realpath(__file__))[0]
+        cases_dir=cur_file_dir
+        case_list=[os.path.abspath(os.path.join(cur_file_dir,"testcases/"))]
+        host="i.xxxxxxx.live.xxxxx.com"     #我们的项目测试环境接口有不同的域名，做了域名配置，生效需要接口地址管理文件上使用这个配置（我这边有一个单独的。py文件管理各种业务接口数据）如果不需要你也可以不用
+        test_or_line=0                      #同上接口case中我们都配置两个环境的url，通过0，1切换线上线下环境，如果不需要你也可以不用
+        thread_m=1 #0为单线程，1为多线程
+        run_project=[]    #执行运行一个文件夹下所有case（文件夹需要在testcase文件下）例如：run_project=[“文件夹名”] 运行文件夹下所有case
+        run_case=[]       #指定运行一个具体的case
 run： run_case.py
 --
 运行入口，如名
